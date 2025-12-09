@@ -1,0 +1,35 @@
+# WireGuard VPN Auto Installer for iPhone
+
+This repository provides a **ready-to-use script** to set up a WireGuard VPN server on an **Ubuntu/Debian server in India** and generate a **client configuration for iPhone**. The script automates server setup, client key generation, configuration, firewall adjustments, and outputs a **QR code** for easy iPhone import.
+
+WireGuard is a modern, secure, and fast VPN protocol — much simpler and more efficient than OpenVPN or IPSec.
+
+---
+
+## Features
+
+- Installs WireGuard and required dependencies automatically  
+- Configures server and firewall for VPN  
+- Generates server and client keys securely  
+- Outputs client configuration and QR code for iPhone  
+- Enables full internet routing through the VPN  
+- Can be extended to multiple clients  
+
+---
+
+## Requirements
+
+- Ubuntu/Debian server with **root access**  
+- Public IP for the server  
+- iPhone with **WireGuard app** installed  
+- Firewall allowing **UDP port 51820**  
+
+---
+
+## How It Works
+
+The script does the following:
+
+1. **Installs WireGuard & QR code generator**  
+   ```bash
+   sudo apt update && sudo apt install wireguard qrencode -y
